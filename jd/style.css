@@ -1,0 +1,301 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Faculty Glyphic", sans-serif;
+    background-color: #fff7f5;
+}
+a {
+    text-decoration: none !important;
+    color: inherit !important;
+}
+a, p, li {
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+b{
+    font-weight: 600 !important;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: "Cinzel", serif;
+    color: #fa4a70;
+    font-weight: 600 !important;
+}
+.c-1{
+    color: #fa4a70;
+}
+.f-b{
+    font-weight: 600;
+}
+/* Navbar-toggler animation */
+.animated-toggler {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    width: 40px;
+    height: 24px;
+}
+
+.animated-bar {
+    display: block;
+    width: 30px;
+    height: 4px;
+    margin: 5px 0;
+    background-color: #fa4a70; /* Your theme color */
+    transition: all 0.3s ease-in-out;
+    border-radius: 2px;
+}
+.animated-bar:nth-child(1){
+    width: 15px;
+}
+.animated-bar:nth-child(2){
+    width: 35px;
+}
+.animated-bar:nth-child(3){
+    width: 25px;
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+
+.navbar>.container{
+    display: block;
+}
+.navbar-brand img{
+    width: 180px;
+}
+.navbar {
+    /* background: linear-gradient(180deg, #fcfdff 45%, transparent); */
+    z-index: 9999;
+}
+.navbar .btn-close {
+    --bs-btn-close-color: #fa4a70 !important;
+    --bs-btn-close-focus-shadow: none;
+    --bs-btn-close-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fa4a70'%3e%3cpath d='M.293.293a1.5 1.5 0 0 1 2.121 0L8 5.586 13.586.293a1.5 1.5 0 1 1 2.121 2.121L10.414 8l5.293 5.293a1.5 1.5 0 0 1-2.121 2.121L8 10.414l-5.293 5.293a1.5 1.5 0 0 1-2.121-2.121L5.586 8 .293 2.707a1.5 1.5 0 0 1 0-2.121z'/%3e%3c/svg%3e");
+    width: 1.5rem; /* Make the button larger */
+    height: 1.5rem;
+    border-radius: 50%; /* Optional: to keep a clean circular style */
+    opacity: 1; /* Ensure full visibility */
+}
+
+.navbar .btn-close:hover {
+    --bs-btn-close-color: #e03a5e; /* Slightly darker on hover */
+    --bs-btn-close-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23e03a5e'%3e%3cpath d='M.293.293a1.5 1.5 0 0 1 2.121 0L8 5.586 13.586.293a1.5 1.5 0 1 1 2.121 2.121L10.414 8l5.293 5.293a1.5 1.5 0 0 1-2.121 2.121L8 10.414l-5.293 5.293a1.5 1.5 0 0 1-2.121-2.121L5.586 8 .293 2.707a1.5 1.5 0 0 1 0-2.121z'/%3e%3c/svg%3e");
+}
+
+.navbar-brand {
+    position: relative;
+    top: 0;
+}
+.navbar-brand::before{
+    position: absolute;
+    content: '';
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: #ffd6db;
+    top: -940%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.navbar-brand-img {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.call-btn {
+    background: #fff;
+    border-radius: 50px;
+    padding: 4px 20px 4px 4px;
+    display: inline-flex;
+    align-items: center;
+    color: #fa4a70;
+    font-weight: 800;
+    border: 1px solid #fa4a70;
+    transition: 0.6s;
+}
+.call-btn:hover {
+    background: #fa4a70;
+    border-radius: 50px;
+    padding: 4px 20px 4px 4px;
+    display: inline-flex;
+    align-items: center;
+    color: #fff !important;
+    font-weight: 800;
+    border: 1px solid #fa4a70;
+}
+.call-btn .icon {
+    color: #fff;
+    background-color: #fa4a70;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    margin-right: 5px;
+}
+.navbar .nav-link{
+    color: #000 !important;
+}
+.navbar .nav-item{
+}
+.banner{
+    height: 90vh;
+    overflow: hidden;
+    position: relative;
+}
+.banner-img{
+    position: relative;
+}
+/* .banner-img::before{
+    content: '';
+    position: absolute;
+    background-color: #ffffff9e;
+    width: 100%;
+    height: -webkit-fill-available;
+    z-index: 99;
+} */
+.banner-content{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    color: #bd0a38;
+}
+.banner-content h1{
+    text-transform: uppercase;
+filter: drop-shadow(2px 3px 1px #fff);
+color: #bd0a38;
+font-size: 58px;
+}
+.banner-content h1{
+filter: drop-shadow(2px 3px 1px #fff);
+}
+
+/* Style for the next and previous buttons */
+.owl-nav button.owl-prev,
+.owl-nav button.owl-next {
+    background-color: #092f56; /* Button background color */
+    color: #fff; /* Icon color */
+    border: none;
+    padding: 10px 15px !important;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 50%; /* Circular button */
+    transition: background-color 0.3s ease;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.owl-nav button.owl-prev {
+    left: -35px; /* Position left button */
+}
+
+.owl-nav button.owl-next {
+    right: -35px; /* Position right button */
+}
+
+/* Hover effect for the buttons */
+.owl-nav button.owl-prev:hover,
+.owl-nav button.owl-next:hover {
+    background-color: #fa4a70; /* Hover color */
+}
+
+/* Hide the default button text */
+.owl-nav button span {
+    display: none;
+}
+
+.card{
+    border: 0;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0px 0px 9px 1px #a5a5a573;
+    margin: 20px 10px;
+}
+.card-body{
+    padding: 0;
+}
+ .card h3{
+    color: #fa4a70;
+ }
+ .bg-color{
+    background-color: #fa4a70;
+    color: #fff;
+    padding: 8px 0;
+ }
+ footer{
+    border-top: 1px solid #fa4a70;
+ }
+ .footer {
+    color: #333;
+  }
+  .footer .icon {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+  .footer h6 {
+    font-weight: bold;
+  }
+  footer .social-icon a i{
+    color: #fa4a70;
+    font-size: 20px;
+  }
+
+  .client{
+    background-color: #ffe7ec;
+  }
+  .sec_fold{
+    background-color: #ffe7ec;
+  }
+
+  @media only screen and (min-width:300px) and (max-width:767px){
+    .navbar-brand::before{
+        width: 210px;
+        height: 210px;
+        top: -790%;
+    }
+    .navbar-brand img{
+        width: 150px;
+    }
+    .navbar-brand-img{
+        top: 35px;
+    }
+    .owl-nav button.owl-prev, .owl-nav button.owl-next{
+        top: 93%;
+    }
+    .owl-nav button.owl-prev{
+        left: 100px;
+    }
+    .owl-nav button.owl-next{
+        right: 100px;
+    }
+    .call-btn{
+        padding: 4px 0 4px 4px;
+    }
+    .call-btn:hover{
+        padding: 4px 0 4px 4px;
+    }
+    .banner-content {
+        text-align: center;
+        top: 23%;
+        left: 50%;
+    }
+    .banner-content h1{
+        font-size: 20px;
+    }
+    .banner-content p{
+        font-size: 15px;
+    }
+  }
+
